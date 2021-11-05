@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#covid19 {
+  height: 58px;
+  background-color: #222222;
+}
+
+div aside {
+  text-align: center;
+}
+
+div aside a {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: normal;
+  text-decoration: underline;
+  color: #a3a3a3;
+  display: inline-block;
+  line-height: 58px;
+}
+
+header {
+  background-color: beige;
+}
+
+ul {
+  display: block;
+  padding: 0 80px;
+  min-width: 50vw;
+  margin: 0 auto;
+}
+
+ul,
+ul li {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+#logo {
+  /* color: white; */
+}
+
+img {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  object-fit: cover;
+  object-position: center bottom;
+  vertical-align: bottom;
+}
