@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: scroll;
+}
 #covid19 {
   height: 58px;
   background-color: #222222;
+  box-shadow: 0px 40px 40px 120px rgba(0, 0, 0, 0.25);
 }
 
 div aside {
@@ -24,7 +28,9 @@ div aside a {
 }
 
 header {
-  background-color: beige;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
   position: relative;
 }
 
@@ -32,9 +38,10 @@ main {
   position: absolute;
   top: 0;
   z-index: -1;
-  background-color: ivory;
+  background-color: transparent;
   width: 100%;
   padding: 186px 80px 40px;
+  height: 85vh;
 }
 
 ul,
@@ -49,12 +56,12 @@ ul {
   height: 80px;
   line-height: 80px;
   margin: auto;
-  background-color: burlywood;
+  background-color: transparent;
 }
 
 #logo {
   align-self: center;
-  /* color: white; */
+  color: white;
 }
 
 ul li {
@@ -64,6 +71,9 @@ ul li {
 ul li div {
   padding: 10px;
   align-self: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 #rooms {
@@ -77,6 +87,7 @@ ul li div {
   border-radius: 32px;
   font-size: 12px;
   font-weight: 800;
+  /* box-shadow: 0px 0px 9px 15px rgba(0, 0, 0, 0.1); */
 }
 
 .rooms-small {
@@ -90,8 +101,9 @@ ul li div {
 }
 
 #text-box {
+  height: 100%;
   min-height: 324px;
-  background-color: khaki;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,9 +116,14 @@ ul li div {
 }
 
 img {
+  z-index: -2;
   position: absolute;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
   object-fit: cover;
   object-position: center bottom;
   vertical-align: bottom;
