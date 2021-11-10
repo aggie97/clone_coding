@@ -34,6 +34,14 @@ header {
   position: relative;
 }
 
+nav ul li {
+  cursor: pointer;
+}
+
+#center-icons div:hover {
+  color: whitesmoke;
+}
+
 main {
   position: absolute;
   top: 0;
@@ -69,7 +77,7 @@ ul li {
 }
 
 ul li div {
-  padding: 10px;
+  padding: 10px 16px;
   align-self: center;
   color: white;
   font-size: 16px;
@@ -83,12 +91,12 @@ ul li div {
 }
 
 #rooms {
-  width: 850px;
+  width: 848px;
   height: 66px;
   background-color: #fff;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 32px;
   font-size: 12px;
@@ -102,15 +110,33 @@ ul li div {
   color: rgb(113, 113, 113);
 }
 
+#first_div{
+  padding: 14px 32px !important;
+}
+
 #rooms > div {
-  padding: 14px 32px;
+  padding: 14px 24px;
+  cursor: pointer;
+}
+
+#rooms > div:hover{
+  background-color: rgb(218, 218, 218, 0.3);
+  border-radius: 32px;
 }
 
 #rooms div:nth-child(5) {
   background-color: rgb(255, 56, 92);
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
   padding: 16px;
-  margin-right: 6px;
+  position: relative;
+  top: 0px;
+  right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#rooms div:nth-child(5):hover{
+  background-color: rgb(228, 48, 81);
 }
 
 div svg {
