@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+}
+
+.aside a span {
+  color: white;
+  text-decoration: underline white;
+  font-size: 14px;
+}
+
+.aside a span:hover {
+  color: rgba(255, 255, 255, 0.836);
+  text-decoration: underline rgba(255, 255, 255, 0.836);
+}
+
+.header,
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 0 80px;
+}
