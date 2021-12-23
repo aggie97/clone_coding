@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .aside {
@@ -28,9 +30,97 @@
 .header-center,
 .header-right {
   display: flex;
+  width: 100%;
+  position: relative;
 }
 
 .header {
   justify-content: space-between;
+  align-items: center;
   padding: 0 80px;
+  height: 80px;
+  background-color: black;
+}
+
+.header-center {
+  justify-content: center;
+}
+
+.header-right {
+  justify-content: end;
+  align-items: center;
+}
+
+.header-center div button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-center div button span {
+  font-size: 16px;
+  padding: 10px 16px;
+  color: white;
+  position: relative;
+  height: 40px;
+  font-weight: 350;
+}
+
+.header-center div button span a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-center div button span:hover {
+  color: rgba(255, 255, 255, 0.836);
+}
+
+/* 추가 수정 필요함 -> 중앙부터 바가 생겨야하는데 현재는 왼쪽에서 오른쪽으로 늘어나는 구조 -21/12/23 22:21*/
+/* tranform 사용하여 해결 -21/12/23 22:38 */
+.header-center div button > span:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 1.5px);
+  width: 4px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.836);
+  transition: 0.2s ease-in-out;
+  transform: scaleX(0);
+}
+
+.header-center div button > span:hover:before {
+  transform: scaleX(1);
+}
+
+/* .header-center div button > span:focus:before {
+  width: 10px;
+  left: 40%;
+} */
+
+.header-right div button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header-right div {
+  padding: 12px;
+}
+
+.header-right div:hover {
+  background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 22px;
+}
+
+.header-right div:nth-child(2) {
+  padding: 10px;
+}
+
+/* 지구본 모양 호버 이펙트 계선 필요... */
+.header-right div:nth-child(2):hover {
+  background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 100%;
 }
