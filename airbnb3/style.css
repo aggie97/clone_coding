@@ -112,6 +112,7 @@
 
 .header-right a {
   text-decoration: none;
+<<<<<<< HEAD
 }
 
 .header-right a span {
@@ -131,6 +132,7 @@
 
 /* 지구본 모양 호버 이펙트 개선 필요... */
 /* 21/12/25 23:32 개선 완료 -> 크기 조정 필요 */
+
 .header-right div:nth-child(2):hover {
   background-color: rgba(255, 255, 255, 0.164);
   border-radius: 100%;
