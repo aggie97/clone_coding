@@ -6,6 +6,8 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/* -------------------- 코로나 관련 aside -------------------- */
+
 .aside {
   display: flex;
   justify-content: center;
@@ -25,6 +27,9 @@
   text-decoration: underline rgba(255, 255, 255, 0.836);
 }
 
+/* -------------------------------------------------------- */
+
+/* ------------------- 헤더 파트 ------------------*/
 .header,
 .header-left,
 .header-center,
@@ -44,11 +49,6 @@
 
 .header-center {
   justify-content: center;
-}
-
-.header-right {
-  justify-content: end;
-  align-items: center;
 }
 
 .header-center div button {
@@ -98,29 +98,61 @@
   left: 40%;
 } */
 
-.header-right div button {
+.header-right {
+  justify-content: end;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header-right a span,
+.language-btn {
+  padding: 12px;
+}
+
+.header-right a {
+  text-decoration: none;
+}
+
+.header-right a span {
+  color: white;
+}
+
+.language-btn {
   background-color: transparent;
   border: none;
   color: white;
   cursor: pointer;
-  font-size: 14px;
 }
 
-.header-right div {
-  padding: 12px;
-}
-
-.header-right div:hover {
+.header-right a span:hover,
+.hearder-right div button:hover {
   background-color: rgba(255, 255, 255, 0.164);
   border-radius: 22px;
 }
 
-.header-right div:nth-child(2) {
-  padding: 10px;
-}
-
-/* 지구본 모양 호버 이펙트 계선 필요... */
+/* 지구본 모양 호버 이펙트 개선 필요... */
+/* 21/12/25 23:32 개선 완료 크기 조정 필요 */
 .header-right div:nth-child(2):hover {
   background-color: rgba(255, 255, 255, 0.164);
   border-radius: 100%;
 }
+
+.account-btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 22px;
+  padding: 5px 5px 5px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.account-btn div:nth-child(2) {
+  width: 30px;
+  height: 30px;
+  color: #717171;
+  margin-left: 12px;
+}
+
+/* ------------------------------------------------ */
