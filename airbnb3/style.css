@@ -51,6 +51,46 @@
   justify-content: center;
 }
 
+.nav_switcher {
+  display: flex;
+  color: white;
+}
+
+.nav_switcher div {
+  width: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_switcher div input {
+  appearance: none;
+  position: relative;
+  top: 18px;
+  width: 4px;
+  height: 2px;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 0.5px;
+  transform: scaleX(0);
+}
+
+.nav_switcher div input:hover {
+  transform: scaleX(1);
+}
+
+.nav_switcher div input:checked {
+  transform: scale(4, 1);
+}
+
+.nav_switcher div label {
+  cursor: pointer;
+  position: absolute;
+}
+
 .header-center div button {
   background-color: transparent;
   border: none;
@@ -69,6 +109,10 @@
 .header-center div button span a {
   color: inherit;
   text-decoration: none;
+}
+
+.nav_switcher div label:hover {
+  color: rgba(255, 255, 255, 0.836);
 }
 
 .header-center div button span:hover {
