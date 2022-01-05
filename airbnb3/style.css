@@ -418,9 +418,28 @@ footer {
   color: rgb(34, 34, 34);
 }
 
+.footer-part2-right > div span:nth-child(2n-1) {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-part2-right > div span:nth-child(2n) {
+  margin-right: 24px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .footer-link-icons ul {
   list-style: none;
   display: flex;
+}
+
+.footer-link-icons ul li {
+  margin-right: 24px;
+}
+
+.footer-link-icons ul li a {
+  color: black;
 }
 
 .section1,
