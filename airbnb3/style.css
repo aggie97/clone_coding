@@ -416,16 +416,61 @@
   margin: 0 auto;
 }
 
-.section2 > div:nth-child(2) {
+.section2 > div:first-child {
+  padding-bottom: 48px;
+}
+
+.section2 div:first-child span h2 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.ideas-container {
   display: flex;
   gap: 15px;
 }
 
-.section2 > div:nth-child(2) div {
+.ideas {
   flex: 1 0 0%;
-  background-color: wheat;
-  height: 400px;
-  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  min-height: 400px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ideas > div {
+  flex: 1 0 0%;
+  position: relative;
+}
+
+.ideas-images {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ideas-container > div > div:nth-child(2) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 24px 16px 16px;
+  max-height: 200px;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.ideas-container > div:nth-child(1) > div:nth-child(2) {
+  background-color: rgb(204, 45, 74);
+}
+
+.ideas-container > div:nth-child(2) > div:nth-child(2) {
+  background-color: rgb(188, 26, 110);
+}
+.ideas-container > div:nth-child(3) > div:nth-child(2) {
+  background-color: rgb(217, 59, 48);
+}
+.ideas-container > div:nth-child(4) > div:nth-child(2) {
+  background-color: rgb(222, 49, 81);
 }
 
 /* ---------------- section2 end ---------------- */
