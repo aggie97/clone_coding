@@ -475,6 +475,72 @@
 
 /* ---------------- section2 end ---------------- */
 
+/* ---------------- section3 start ---------------- */
+
+.section3 {
+  max-width: calc(min(1760px, 100%) - 160px);
+  margin: 0 auto;
+}
+
+.section3-title h2 {
+  font-size: 42px;
+  font-weight: 600;
+  padding-bottom: 48px;
+}
+
+.section3-cards {
+  display: flex;
+  position: relative;
+  gap: 25px;
+  min-height: 750px;
+}
+
+.section3-cards > div {
+  flex: 1;
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  z-index: 1;
+  min-width: 600px;
+  min-height: 750px;
+  padding: 80px;
+  color: white;
+}
+
+.text-container div > span {
+  font-size: 53px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.text-container > div:nth-child(1) {
+  padding-bottom: 24px;
+}
+
+.text-container > div:nth-child(2) {
+  margin-top: 16px;
+}
+
+.text-container div > a {
+  padding: 14px 24px;
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.text-container div > a:hover {
+  background-color: #dddddd;
+}
+
+.picture-container {
+  position: relative;
+}
+
+/* ---------------- section3 end ---------------- */
+
 /* ---------------- footer ---------------- */
 
 footer {
