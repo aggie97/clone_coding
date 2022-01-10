@@ -500,11 +500,14 @@
   position: relative;
 }
 
+<<<<<<< HEAD
 .ideas div picture > img {
   width: 100%;
   height: 100%;
 }
 
+=======
+>>>>>>> facd0352974392c39d0163e4e0cbe5b57dd2b1b3
 .text-container {
   position: absolute;
   z-index: 1;
