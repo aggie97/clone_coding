@@ -110,7 +110,7 @@
           </div>
         </div>
         <!-- 체험 내비게이션 수정 필요 (현재 복붙만 한 상태) -->
-        <div class="nav_for_exp hide">
+        <div class="nav_for_exp" id="hide">
           <div class="location">
             <span>위치</span>
             <div>
@@ -118,7 +118,7 @@
             </div>
           </div>
           <div class="nav_div_bar"></div>
-          <div>
+          <!-- <div>
             <span>체크인</span>
             <p>날짜 입력</p>
           </div>
@@ -127,15 +127,19 @@
             <span>체크아웃</span>
             <p>날짜 입력</p>
           </div>
-          <div class="nav_div_bar"></div>
+          <div class="nav_div_bar"></div> -->
           <div>
             <div>
-              <span>인원</span>
-              <p>게스트 추가</p>
+              <span>날짜</span>
+              <p>원하는 날짜를 입력하세요.</p>
             </div>
             <div class="nav_bar_search_btn">
               <button>
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:16px;width:16px;stroke:currentColor;stroke-width:4;overflow:visible" aria-hidden="true" role="presentation" focusable="false"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg>
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="fill:none;height:16px;width:16px;stroke:currentColor;stroke-width:4;overflow:visible" aria-hidden="true" role="presentation" focusable="false">
+                  <g fill="none">
+                    <path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path>
+                  </g>
+                </svg>
               </button>
             </div>
           </div>
@@ -420,6 +424,6 @@
       </footer>
     </div>
   </main>
-  <script src="app.js"></script>
+  <script src="nav_switch.js"></script>
 </body>
 </html>

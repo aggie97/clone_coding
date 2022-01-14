@@ -7,7 +7,7 @@
 }
 
 /* 자바스크립트로 태그의 가시여부를 조작할 클래스 hide */
-.hide {
+#hide {
   display: none;
 }
 
@@ -79,7 +79,7 @@
   width: 4px;
   height: 2px;
   background-color: white;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   cursor: pointer;
   border-radius: 0.5px;
   transform: scaleX(0);
@@ -90,7 +90,7 @@
 }
 
 .nav_switcher div input:checked {
-  transform: scale(4, 1);
+  transform: scale(5, 1);
 }
 
 .nav_switcher div label {
@@ -127,7 +127,7 @@
 }
 
 /* 추가 수정 필요함 -> 중앙부터 바가 생겨야하는데 현재는 왼쪽에서 오른쪽으로 늘어나는 구조 -21/12/23 22:21*/
-/* tranform 사용하여 해결 -21/12/23 22:38 */
+/* transform 사용하여 해결 -21/12/23 22:38 */
 .header-center div button > span:before {
   content: "";
   position: absolute;
@@ -253,7 +253,8 @@
 }
 
 /* stay nav in main nav */
-.nav_for_stay {
+.nav_for_stay,
+.nav_for_exp {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -263,28 +264,37 @@
   border-radius: 32px;
 }
 
-.nav_for_stay div > span {
+.nav_for_stay div > span,
+.nav_for_exp div > span {
   font-weight: 600;
 }
 
-.nav_for_stay div > p {
+.nav_for_stay div > p,
+.nav_for_exp div > p {
   color: #717171;
   line-height: 25px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.nav_for_stay div {
+.nav_for_stay div,
+.nav_for_exp div {
   height: 100%;
 }
 
-.nav_for_stay div:nth-child(odd) {
+.nav_for_stay div:nth-child(odd),
+.nav_for_exp div:nth-child(odd) {
   cursor: pointer;
 }
 
-.location {
+.nav_for_stay .location {
   flex: 1.5 0 0%;
   padding: 14px 32px;
+}
+
+.nav_for_exp .location {
+  flex: 1 0 0%;
+  padding: 14px 16px 14px 32px;
 }
 
 .location input {
@@ -293,13 +303,15 @@
   background-color: transparent;
   outline: none;
 }
-.nav_for_stay div:nth-child(odd):hover {
+.nav_for_stay div:nth-child(odd):hover,
+.nav_for_exp div:nth-child(odd):hover {
   background-color: #f3efef;
   border-radius: 32px;
 }
 
 .nav_for_stay div:nth-child(3),
-.nav_for_stay div:nth-child(5) {
+.nav_for_stay div:nth-child(5),
+.nav_for_exp div:nth-child(3) {
   flex: 1 0 0%;
   padding: 14px 24px;
 }
@@ -310,11 +322,23 @@
   padding: 14px 24px;
 }
 
-.nav_for_stay div:nth-child(7) > div {
+.nav_for_exp div:nth-child(3) {
+  display: flex;
+}
+
+.nav_for_stay div:nth-child(7) > div,
+.nav_for_exp div:nth-child(3) > div {
   flex: 1 0 0;
 }
 
 .nav_for_stay div:nth-child(7) div:nth-child(2) {
+  flex: 0 0 auto;
+  position: relative;
+  top: -4px;
+  left: 15px;
+}
+
+.nav_for_exp div:nth-child(3) div:nth-child(2) {
   flex: 0 0 auto;
   position: relative;
   top: -4px;
