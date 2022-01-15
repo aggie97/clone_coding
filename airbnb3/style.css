@@ -6,7 +6,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* 자바스크립트로 태그의 가시여부를 조작할 클래스 hide */
+/* 자바스크립트로 태그의 가시여부를 조작할 id hide */
 #hide {
   display: none;
 }
@@ -35,13 +35,12 @@
 /* -------------------------------------------------------- */
 
 /* ------------------- 헤더 파트 ------------------*/
-.header,
-.header-left,
-.header-center,
-.header-right {
-  display: flex;
-  width: 100%;
-  position: relative;
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .header {
@@ -50,6 +49,14 @@
   padding: 0 80px;
   height: 80px;
   background-color: black;
+}
+
+.header,
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  width: 100%;
   position: relative;
 }
 
