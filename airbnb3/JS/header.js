@@ -1,25 +1,21 @@
 'use strict';
 
-const header = document.querySelector('header');
+const header = document.querySelector('.header');
+const logoBox = document.querySelector('.svg-container');
+const hostBox = document.querySelector('.be-host');
+const earthIcon = document.querySelector('.language-btn');
 
-let scrollYPosition = 0;
+const blackArray = [hostBox, earthIcon];
 
-let ticking = false;
-
-function changHeaderColor(scroll_pos){
-  if(scroll_pos > 49){
+window.addEventListener('scroll', function(){
+  let y = window.scrollY;
+  if(y > 49){
     header.style.backgroundColor = 'white';
-  }
-}
-
-window.addEventListener('scroll', function(e){
-  scrollYPosition = window.scrollY;
-
-  if(!ticking){
-    window.requestAnimationFrame(function(){
-      changHeaderColor(scrollYPosition);
-      ticking = false;
-    });
-    ticking = true;
-  }
-})
+    blackArray.forEach(element => element.style.color = 'black');
+    logoBox.style.color = 'rgb(225, 56, 92)';
+  }else{
+    header.style.backgroundColor = 'black';
+    blackArray.forEach(element => element.style.color = 'white');
+    logoBox.style.color = 'white';
+  }  
+});

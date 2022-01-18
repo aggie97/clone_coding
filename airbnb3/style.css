@@ -49,6 +49,7 @@ header {
   padding: 0 80px;
   height: 80px;
   background-color: black;
+  transition: 0.2s ease all;
 }
 
 .header,
@@ -58,6 +59,11 @@ header {
   display: flex;
   width: 100%;
   position: relative;
+}
+
+.svg-container {
+  color: white;
+  transition: 0.2s all ease;
 }
 
 .header-center {
@@ -162,10 +168,11 @@ header {
   font-size: 14px;
 }
 
-.header-right a span,
+.be-host,
 .language-btn {
   padding: 12px;
   color: white;
+  transition: 0.2s ease all;
 }
 
 .header-right a {
@@ -196,7 +203,7 @@ header {
   display: flex;
   align-items: center;
   background-color: white;
-  border: none;
+  border: 1px solid #dddddd;
   border-radius: 22px;
   padding: 5px 5px 5px 12px;
   margin-left: 5px;
