@@ -2,8 +2,9 @@
 
 // Variable Declaration
 
-const account = document.querySelector('.account-btn');
+const accountBtn = document.querySelector('.account-btn');
+const accountBox = document.querySelector('.account-box');
 
 // Add EventListner & Define Function
 
-account.addEventListener('click', ()=> console.log('Account Button is clicked!'))
+accountBtn.addEventListener('click', () => accountBox.classList.toggle('hide'));

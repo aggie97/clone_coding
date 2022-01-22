@@ -11,6 +11,10 @@
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
 /* -------------------- 코로나 관련 aside -------------------- */
 
 .aside {
@@ -40,7 +44,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 3;
 }
 
 .header {
@@ -172,6 +176,7 @@ header {
 .language-btn {
   padding: 12px;
   color: white;
+  border-radius: 22px;
   transition: 0.2s ease all;
 }
 
@@ -180,15 +185,18 @@ header {
 }
 
 .language-btn {
-  background-color: transparent;
+  background-color: black;
   border: none;
   cursor: pointer;
 }
 
-.header-right a span:hover,
-.hearder-right div button:hover {
-  background-color: rgba(255, 255, 255, 0.164);
-  border-radius: 22px;
+.toWhite {
+  background-color: white;
+}
+
+.be-host:hover,
+.language-btn:hover {
+  background-color: rgba(141, 141, 141, 0.253);
 }
 
 /* 지구본 모양 호버 이펙트 개선 필요... */
@@ -215,6 +223,33 @@ header {
   height: 30px;
   color: #717171;
   margin-left: 12px;
+}
+
+.account-box {
+  position: absolute;
+  z-index: 4;
+  margin-top: 10px;
+  right: 0.1px;
+  /* overflow: hidden; */
+}
+
+.account-ul {
+  list-style: none;
+  color: rgb(34, 34, 34);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0.1px #717171;
+}
+
+.account-li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 138px;
+}
+
+.account-li:nth-child(2) {
+  border-bottom: 1px solid #dddddd;
 }
 
 .small-logo {
@@ -259,10 +294,11 @@ header {
 
 .main_nav_container {
   background-color: black;
+  height: 66px;
 }
 .main_nav {
   max-width: 850px;
-  height: 66px;
+  height: 100%;
   margin: 0 auto;
 }
 
