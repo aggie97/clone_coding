@@ -14,7 +14,7 @@ window.addEventListener('scroll', function(){
     header.style.backgroundColor = 'white';
     earthIcon.classList.add('toWhite');
     blackArray.forEach(element => element.style.color = 'black');
-    logoBox.style.color = 'rgb(225, 56, 92)';
+    logoBox.style.color = 'rgb(255, 56, 92)';
       mainNav.id = 'hide';
     // mainNav.classList.add('toMinimal');
   }else{
